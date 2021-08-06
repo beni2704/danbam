@@ -1,0 +1,182 @@
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Indie+Flower&family=Roboto:wght@100&display=swap');
+
+/* contoh pemakaian
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
+:root{
+    --main-black: #0C0C09;
+    --main-white: #FFFCF9;
+    --main-red: #D00000;
+    --main-blue: #313DC4;
+    --main-yellow: #F3B416;
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: inherit;
+    background-size:cover;
+    display:absolute;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: content-box;
+    background-color: var(--main-black);
+}
+
+a{
+    text-decoration: none;
+    color : var(---main-white);
+}
+
+body{
+    color: var(--main-white);
+    text-align: center;
+}
+
+/* awal artikel */
+article{
+    height: 78vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+button
+{
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    transition: 0.5s ;
+    background-color: rgb(145, 145, 17);
+    box-shadow: 0 3px 20px 0 white;
+
+}
+article h1
+{
+    font-size:42px;
+    transition:2s ease-in;
+    opacity: 1;
+}
+/* akhir article */
+
+
+/* awal navbar */
+
+article
+{
+    min-height: 80vh;
+}
+
+header
+{
+    position:sticky; 
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px solid var(--main-white);
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    padding-bottom: 5px;
+}
+header .logo{
+    justify-content: center;
+}
+
+.logo:hover
+{
+    transition:0.3s;
+    opacity: 0.7;
+}
+
+.logo img{
+    width: 40%;
+    height:auto;
+}
+
+.dropdown{
+    position:relative;
+    
+}
+
+.dropdown:hover
+{
+    transition:0.1s;
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    cursor:pointer;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    box-shadow: 0 3px 5px 0 white;
+    border-radius:10px;
+}
+
+.dropdown-content a
+{
+    display: block;
+    padding:10px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+
+.dropdown-content a:hover
+{
+    background: rgb(16, 73, 11);
+    font-weight:800;
+}
+
+/* akhir navbar */
+
+/* awal footer */
+footer{
+    border-top: 1px solid var(--main-white);
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    margin-top: 50px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media{
+    display: flex;
+}
+.social-media img{
+    margin:2px 5px;
+}
+
+
+@media (max-width: 969px) {
+    footer{
+        flex-direction: column;
+        line-height: 1.6;
+    }
+    .social-media img{
+        padding: 5px;
+    }
+}
+/* akhir footer */
+

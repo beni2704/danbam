@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us: Dandam</title>
+    <link rel="stylesheet" href="stylecontactus.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <script defer src="./form.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="logo">
+            <a href="../Home/home.html"><img src="../images/Website-DanDam_02.png" alt="logo"></a>
+        </div>
+        <div class="dropdown">
+            <img src="../images/Website-DanDam_05.png" alt="dropdown">
+            <div class="dropdown-content">
+                <a href="../Home/home.html">Home</a>
+                <a href="../Location/location.html">Location</a>
+                <a href="../Menu/Menu.html">Menu</a>
+                <a href="../AboutUs/AboutUs.html">About Us</a>
+                <a href="../ContactUs/ContactUs.html">Contact Us</a>
+            </div>
+        </div> 
+    </header>
+
+    <!-- ini content -->
+    <article>
+        <h1>Contact Us</h1>
+        <form action="../Thank you/Thankyou.html" method="get" id="contact-form">
+            <!-- nama -->
+            <div class="form-grouping">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-edit" placeholder="Enter your name">
+                <div class="error-message" id="nameerror">
+                    
+                </div>
+            </div>
+            <!-- email -->
+            <div class="form-grouping">
+                <label for="emailtext">Email:</label>
+                <input type="text" id="email" name="email" class="form-edit" placeholder="Enter your email">
+                <div class="error-message" id="emailerror">
+                    
+                </div>
+            </div>
+            <!-- dob -->
+            <div class="form-grouping">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" class="form-edit" placeholder="Enter your Age">
+                <div class="error-message" id="ageerror">
+                     
+                </div>
+            </div>
+            <!-- Gender -->
+            <div class="form-grouping">
+                <p>Select Gender : </p>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" class="input-radio" placeholder="Male" value="male">Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female" class="input-radio" placeholder="Female" value="female">Female
+                </label>
+                <div class="error-message" id="gendererror">
+                </div>
+            </div>
+
+            <!-- select branch -->
+            <div class="form-grouping">
+                <label for="branch">Choose a branch: </label>
+                <select name="branch" id="branch" class="form-edit">
+                    <option disabled selected values></option>
+                    <option value="AlamSutera">Alam Sutera</option>
+                    <option value="Bekasi">Bekasi</option>
+                </select>
+                <div class="error-message" id="brancherror">
+                   
+                </div>
+            </div>
+            
+
+            <!-- message -->
+            <div class="form-grouping">
+                <p>What message would you like to send?</p>
+                <textarea name="message" id="messages" class="textarea" placeholder="Enter your messages here.."></textarea>
+                <div class="error-message" id="messageserror">
+                    
+                </div>
+            </div>
+
+            <!-- agree send latest -->
+            <div class="form-grouping">
+                <label for="agree">
+                    <input type="checkbox" name="receiveLastest" value="sendInformation" class="input-checkbox">Do you want to receive the latest information? (Optional)
+                </label>
+                <label for="agree">
+                    <input type="checkbox" name="agreetos" value="agreetos" class="input-checkbox" id="terms">I Agree to terms & conditions
+                </label>
+                <div class="error-message" id="termserror">
+                    
+                </div>
+            </div>
+            <!-- submit -->
+            <div class="form-grouping">
+                <button type="submit" class="send-button">Send</button>
+            </div>
+        </form>
+    </article>
+    
+
+    <!-- footer -->
+    <footer>
+        <p class="copyright">&copy; Danbam. 2020</p>
+        <p class="motto">We serve the best korean food you have ever tasted</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../images/Website-DanDam_25.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/Website-DanDam_26.png" alt="instagram"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="../images/Website-DanDam_28.png" alt="youtube"></a>
+        </div>
+    </footer>  
+</body>
+</html>

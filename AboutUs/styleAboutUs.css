@@ -1,0 +1,259 @@
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Indie+Flower&family=Roboto:wght@100&display=swap');
+
+/* contoh pemakaian
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
+:root{
+    --main-black: #0C0C09;
+    --main-white: #FFFCF9;
+    --main-red: #D00000;
+    --main-blue: #313DC4;
+    --main-yellow: #F3B416;
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: inherit;
+    background-size:cover;
+    display:absolute;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: content-box;
+    background-color: var(--main-black);
+}
+
+a{
+    text-decoration: none;
+    color : var(---main-white);
+}
+
+html,body{
+    color: var(--main-white);
+    text-align: center;
+}   
+
+/* awal artikel */
+
+article
+{
+    min-height: 80vh;
+}
+
+
+article h1 {
+    margin: 10px 0;
+    font-size: 68px;
+    font-weight: 600;
+    text-shadow: 2px 1px blue;
+    /* text-shadow: 0 0 20px var(--main-white); */
+}
+
+.desc{
+    width: 70%;
+    margin: 15px auto;
+    border: solid var(--main-white) 3px;
+    box-shadow: 3px 2px 3px blue;
+    color:var(--main-white);
+    text-shadow: 2px 1px var(--main-black);
+}
+
+
+.desc p, .desc i{
+    font-family:'Indie Flower', cursive;
+    font-size: 36px;
+    background-color: green;
+}
+
+
+.sosmed{
+    display:flex;
+    align-items:center;
+    margin: 0px 20px;
+    background-color: green;
+}
+
+.sosmed a{
+    margin: 0 10px;
+}
+
+.sosmed img:hover{
+    transition: ease-out 0.3s;
+    opacity: 0.9;
+}
+
+.social-media-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #008000;
+}
+
+@media (max-width: 969px) {
+    .social-media-desc{
+        flex-direction: column;
+        line-height: 1.6;
+    }
+    article .row-restoran img{
+        width: 100%;
+    }
+}
+
+.row-restoran
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1025px) {
+    .row-restoran{
+        flex-direction: column;
+    }
+}
+
+.row-restoran img
+{  
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 3%;
+}
+
+.resto1:hover
+{
+    transition: 0.3s;
+    opacity: 1.0;
+    box-shadow: 3px 2px 3px white;
+}
+
+.resto2:hover
+{
+    transition: 0.3s;
+    opacity: 1.0;
+    box-shadow: 3px 2px 3px white;
+
+}
+
+.resto3:hover
+{
+    transition:0.3s;
+    opacity: 1.0;
+    box-shadow: 3px 3px 3px white;
+
+}
+
+
+@media (min-width: 1025px) {
+    .resto1{
+        transform:rotate(-15deg);
+    }
+    .resto3{
+        transform:rotate(15deg);
+    }
+}
+
+/* akhir article */
+
+/* awal navbar */
+header
+{
+    position:sticky; 
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px solid var(--main-white);
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    padding-bottom: 5px;
+}
+header .logo{
+    justify-content: center;
+}
+.logo:hover
+{
+    transition:0.3s;
+    opacity: 0.7;
+}
+
+.logo img{
+    width: 40%;
+    height:auto;
+}
+
+.dropdown{
+    position:relative;
+    
+}
+
+.dropdown:hover
+{
+    transition:0.1s;
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    cursor:pointer;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    box-shadow: 0 3px 5px 0 white;
+    border-radius:10px;
+    
+}
+
+.dropdown-content a
+{
+    display: block;
+    padding:10px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+
+.dropdown-content a:hover
+{
+    background: rgb(16, 73, 11);
+    font-weight:800;
+}
+/* akhir navbar */
+
+/* awal footer */
+footer{
+    border-top: 1px solid var(--main-white);
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    margin-top: 50px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media{
+    display: flex;
+}
+.social-media img{
+    margin:2px 5px;
+}
+
+
+@media (max-width: 969px) {
+    footer{
+        flex-direction: column;
+        line-height: 1.6;
+    }
+    .social-media img{
+        padding: 5px;
+    }
+}
+/* akhir footer */
+
