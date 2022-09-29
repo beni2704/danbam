@@ -1,0 +1,250 @@
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Indie+Flower&family=Roboto:wght@100&display=swap');
+
+/* contoh pemakaian
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
+:root{
+    --main-black: #0C0C09;
+    --main-white: #FFFCF9;
+    --main-red: #D00000;
+    --main-blue: #313DC4;
+    --main-yellow: #F3B416;
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    background-size:cover;
+    display:absolute;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: content-box;
+    background-color: var(--main-black);
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color : var(---main-white);
+}
+
+body{
+    color: var(--main-white);
+    text-align: center;
+}
+
+/* awal artikel */
+article{
+    /* margin-left: 20px; */
+    margin-top: 15px;
+    min-height: 80vh;
+}
+
+.banner img{
+    border : 1px solid white;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0px 5px 0 white;
+
+}
+
+@media (min-width: 640px) {
+    .banner img{
+        border : 1px solid white;
+        width: 70%;
+        height: auto;
+    }
+}
+
+.badan{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    line-height: 1.2;
+}
+
+.badan .column-kiri
+{
+    font-size: 24px;
+    text-shadow: 0 0 8px var(--main-black);
+}
+
+
+.boruto
+{
+    margin-top: 40px;
+    line-height: 2;
+    font-size :32px;
+}
+
+.neon-box-yellow h3
+{
+    background-color: green;
+    text-shadow: 2px 2px var(---main-black);
+    border: 2px solid white;
+    border-style: outset;
+}
+
+.neon-box-yellow .loc:hover {
+    transition: 0.5s ease-out;
+    background-color: rgb(1, 71, 1);
+    
+}
+
+.neon-box-yellow
+{
+    display:flex;
+    flex-direction: column;
+    padding: 3px;
+    border-radius: 10%;
+}
+
+.badan .column-kanan h2
+{
+    font-size: 48px;
+    text-shadow: 0 0 20px var(--main-white);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.column-food{
+    display: flex;
+}
+
+.column-food img:hover
+{
+    transition:0.3s;
+    opacity: 0.6;
+}
+
+@media (max-width: 1025px) {
+    .badan{
+        flex-direction: column;
+        align-items: center;
+    }
+    .column-food{
+        flex-direction: column;
+    }
+    .badan .column-kanan img{
+        width: 100%;
+    }
+    .badan .column-kanan h2{
+        margin-top:20px;
+        font-size: 36px;
+    }
+    .badan .column-kiri h2{
+        font-size: 30px;
+    }
+}
+
+/* .backtotop a img
+{
+    width: 3%;
+    height: auto;
+} */
+
+
+/* akhir article */
+
+
+/* awal navbar */
+header
+{
+    position:sticky; 
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px solid var(--main-white);
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    padding-bottom: 5px;
+}
+header .logo{
+    justify-content: center;
+}
+
+.logo img{
+    width: 40%;
+    height:auto;
+}
+
+.logo:hover
+{
+    transition:0.3s;
+    opacity: 0.7;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown:hover
+{
+    transition:0.1s;
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    cursor:pointer;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    box-shadow: 0 3px 5px 0 white;
+    border-radius:10px;
+    
+}
+
+.dropdown-content a
+{
+    display: block;
+    padding:10px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+
+.dropdown-content a:hover
+{
+    background: rgb(16, 73, 11);
+    font-weight:800;
+}
+/* akhir navbar */
+
+/* awal footer */
+footer{
+    border-top: 1px solid var(--main-white);
+    box-shadow: 0 3px 30px 0 rgb(183, 191, 255);
+    margin-top: 50px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media{
+    display: flex;
+}
+.social-media img{
+    margin:2px 5px;
+}
+
+
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        line-height: 1.6;
+    }
+    .social-media img{
+        padding: 5px;
+    }
+}
+/* akhir footer */
+
